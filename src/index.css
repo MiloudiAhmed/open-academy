@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 font-sans;
+  }
+
+  #root {
+    @apply min-h-screen bg-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#3643BD] text-white font-bold text-lg px-6 py-3 rounded-lg border border-[#9B9B9B] shadow-sm hover:bg-[#2c36a3] transition;
+  }
+
+  .section-heading {
+    @apply text-3xl font-semibold text-black mb-4;
+  }
+
+  .card {
+    @apply bg-white border border-gray-300 shadow-sm rounded-lg overflow-hidden;
+  }
+
+  .card-title {
+    @apply text-xl font-bold text-[#3643BD] leading-tight;
+  }
+
+  .card-description {
+    @apply text-sm text-gray-600 mt-2;
+  }
+
+  .footer-section {
+    @apply bg-[#3643BD] text-white px-6 py-12;
+  }
+
+  .footer-title {
+    @apply text-white font-extrabold text-sm mb-3;
+  }
+
+  .footer-link {
+    @apply text-white text-sm hover:underline;
+  }
+
+  .cta-section {
+    @apply flex flex-col md:flex-row items-center justify-between bg-white py-12 px-6;
+  }
+
+  .cta-image {
+    @apply w-full md:w-1/2;
+  }
+
+  .cta-text {
+    @apply text-lg text-gray-700 leading-relaxed;
+  }
+
+  .level-selector {
+    @apply grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6;
+  }
+
+  .level-btn {
+    @apply bg-[#3643BD] text-white font-semibold py-3 px-4 rounded-lg text-center shadow hover:bg-[#2c36a3] transition;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-text {
+    @apply text-4xl;
+  }
+  .cta-text {
+    @apply text-xl;
+  }
+}
