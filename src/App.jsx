@@ -5,6 +5,7 @@ import { TroncCommun } from "./pages/TroncCommun";
 import { PremiereBac } from "./pages/PremiereBac";
 import { DeuxiemeBac } from "./pages/DeuxiemeBac";
 import { Courses } from "./pages/Courses";
+import Quizzes from "./pages/Quizzes";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path="/niveau/1ere-bac" element={<PremiereBac />} />
         <Route path="/niveau/2eme-bac" element={<DeuxiemeBac />} />
         <Route path="/courses" element={<Courses />} />
-
+        <Route path="/quizzes" element={<Quizzes />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

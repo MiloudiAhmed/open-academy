@@ -1,3 +1,5 @@
+import { CallToAction } from "../components/CallToAction";
+import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
 import { LevelSelector } from "../components/LevelSelector";
 import Navbar from "../components/Navbar";
@@ -14,7 +16,9 @@ export const Home = () => {
       <LevelSelector />
       <SuggestedCourses />
       <QuizPromo />
+      <CallToAction />
       {/* Footer */}
+      <Footer />
     </div>
   );
 };
